@@ -21,9 +21,9 @@ const Tryme = () => {
                         <ButtonLink href={'#contact'} name={'Contact'} icon={<MdArrowForward />}/>
                     </div>
                 </div>
-                <img loading="lazy" className="absolute w-full top-5   opacity-30" src="/public/images/try/Vector 1.png" alt="" />
-                <img loading="lazy" className="absolute w-full top-5   opacity-30" src="/public/images/try/Vector 2.png" alt="" />
-                <img loading="lazy" className="absolute w-full top-12    opacity-30" src="/public/images/try/Vector 3.png" alt="" />
+                <img loading="lazy" className="absolute w-full top-5   opacity-30" src={import.meta.env.BASE_URL+"images/try/Vector 1.png"} alt="" />
+                <img loading="lazy" className="absolute w-full top-5   opacity-30" src={import.meta.env.BASE_URL+"images/try/Vector 2.png"} alt="" />
+                <img loading="lazy" className="absolute w-full top-12    opacity-30" src={import.meta.env.BASE_URL+"images/try/Vector 3.png"} alt="" />
             </div>
         </section>
     )

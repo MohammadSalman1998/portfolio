@@ -20,7 +20,7 @@ const EducateItems = () => {
             return(
                
                 <div key={item.id} className="border-l-2 relative border-dashed !pl-8">
-                        <img loading="lazy" className=" transition-all duration-300 ease-in absolute top-0 -left-3" src={isDark == 'true' ? "/public/images/education/iconDark.png" : "/public/images/education/iconLight.png"} alt="" />
+                        <img loading="lazy" className=" transition-all duration-300 ease-in absolute top-0 -left-3" src={isDark == 'true' ? import.meta.env.BASE_URL+"images/education/iconDark.png" : import.meta.env.BASE_URL+"images/education/iconLight.png"} alt="" />
                         <p className={` transition-all duration-300 ease-in${isDark == 'true' ? 'text-white' : 'text-secondary'}  text-2xl  font-medium`}>{item.title}</p>
                         <p className={` text-secondary4 !my-7`}>{item.desc}</p>
 

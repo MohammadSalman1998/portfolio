@@ -74,7 +74,7 @@ const ProjectDetails = () => {
                                     <p className="text-3xl font-semibold">{dataProject.name}</p>
                                     <p className="text-[14px] text-[#A6A6A6]">{dataProject.date}</p>
                                 </div>
-                                <Link target="_blanck" to={dataProject.demoLink}><img src="/public/images/Portfolio/Icon.png" alt="" /></Link>
+                                <Link target="_blanck" to={dataProject.demoLink}><img src={import.meta.env.BASE_URL+"images/Portfolio/Icon.png"} alt="" /></Link>
                             </div>
                             <div className="bodyCard ">
                                 <p>{dataProject.desc}</p>
@@ -91,7 +91,7 @@ const ProjectDetails = () => {
                     </div>
                 </div>
                 <div className=" absolute bottom-0 border-dashed border-t-2 w-full">
-                    <img className="absolute left-[50%]  -top-2.5" src="/public/images/hero/dot.png" alt="" />
+                    <img className="absolute left-[50%]  -top-2.5" src={import.meta.env.BASE_URL+"images/hero/dot.png"} alt="" />
                 </div>
             </section>
            
