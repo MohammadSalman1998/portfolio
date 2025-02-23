@@ -1,0 +1,64 @@
+/* src\components\Sections\ProjectDetails\projectDetails.css */
+
+#projectDetails {
+
+
+
+    padding-top: 90px;
+
+    .content {
+        margin: 100px auto;
+    }
+
+    .content .left:hover .overlay {
+        display: block;
+    }
+}
+
+
+@media(max-width:990px) {
+    #projectDetails {
+        .content {
+            flex-wrap: wrap;
+            margin: 0;
+            gap: 150px;
+
+            .left,
+            .right {
+                width: 100%;
+            }
+        }
+    }
+
+}
+
+@media(max-width:775px) {
+    #sliderProject {
+        .title {
+            flex-wrap: wrap;
+            justify-content: start;
+
+            .left {
+                width: 100%;
+            }
+        }
+
+        .cards  {
+
+            margin: 0 !important;
+            gap: 20px;
+        }
+
+    }
+}
+
+@media(max-width:525px) {
+    #projectDetails {
+        .content {
+            gap: 10px;
+            padding: 0 0 50% 0 !important;
+        }
+
+
+    }
+}

@@ -1,0 +1,62 @@
+/* src\components\Header\header.css */
+
+@media(max-width:930px) {
+
+    header{
+        .logo a{
+            font-size: 20px;
+        }
+        
+        
+        nav ul {
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+  
+            position: absolute;
+            height: 100vh;
+            /* width: 50vw; */
+            width: 240px;
+            left: 0;
+            z-index: 999;
+            background-color: #fff;
+            opacity: .98;
+            
+            text-align: start;
+            top: 78px;
+            transition: all .5s;
+    
+            li {
+                padding: 20px;
+                /* border-bottom: 1px solid; */
+                font-size: 20px;
+            }
+        }
+    }
+
+    #openMenu {
+        transform: translateX(-100%);
+    }
+
+
+    #menuBtn {
+        display: inline;
+    }
+}
+
+
+@media(max-width:470px) {
+    header{
+        .logo{
+            position: absolute;
+            left: 10px;
+        }
+
+        .theme{
+            position: absolute;
+            right: 10px;
+        }
+
+    }
+}

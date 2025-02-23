@@ -1,0 +1,38 @@
+/* src\components\Sections\Tryme\tryMe.css */
+
+
+@media(max-width:1070px) {
+    #trySection {
+        .content {
+            flex-wrap: wrap;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+            gap: 20px;
+        }
+    }
+}
+
+@media(max-width:750px) {
+    #trySection {
+        img{
+            top: 50%;
+        }
+        .content {
+            .left {
+                position: absolute;
+                left: 0;
+                right: 0;
+                width: 100%;
+                text-align: center;
+                p{
+                    font-size: 20px;
+                }
+            }
+
+            .right {
+                transform: translateY(310%);
+            }
+        }
+    }
+}

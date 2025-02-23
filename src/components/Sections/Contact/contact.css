@@ -1,0 +1,41 @@
+/* src\components\Sections\Contact\contact.css */
+
+@media(max-width:1040px) {
+
+    #contact {
+        padding: 0 80px;
+        .content {
+            flex-wrap: wrap;
+
+            .right,
+            .left {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width:550px) {
+
+    #contact {
+        padding: 0 8px;
+
+        .content {
+            align-content: start;
+            justify-content: left;
+            width: 100%;
+
+            .left,
+            .right {
+                width: 100%;
+            }
+
+            .info-contact {
+                overflow-x: auto;
+                width: 100%;
+            }
+
+        }
+    }
+
+}

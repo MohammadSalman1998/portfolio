@@ -1,0 +1,16 @@
+/* src\components\Sections\Education\education.css */
+
+
+@media(max-width:850px) {
+    #education {
+
+        .top-shape{
+           display: none;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
