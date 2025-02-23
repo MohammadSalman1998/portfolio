@@ -30,7 +30,7 @@ const Header = () => {
       </ul>
         </nav>
       <div className="theme flex items-center">
-        <button className="bg-transparent border-0" onClick={setIsDark}><img className="cursor-pointer" src={isDark=='true'? "/public/images/sun/Sun_fill.png" : '/public/images/moon/moon.png'} alt="theme" /></button>
+        <button className="bg-transparent border-0" onClick={setIsDark}><img className="cursor-pointer" src={isDark=='true'? import.meta.env.BASE_URL+"images/sun/Sun_fill.png" : import.meta.env.BASE_URL+'images/moon/moon.png'} alt="theme" /></button>
         <button onClick={handleMenu} id="menuBtn" className={`border-0 !ml-5 hidden cursor-pointer ${isDark == 'true' ? "text-primary" : ""} text-3xl `}>{!isMenuOpen? <HiMenuAlt3 />: <MdClose/> }</button>
       </div>
     </header>
