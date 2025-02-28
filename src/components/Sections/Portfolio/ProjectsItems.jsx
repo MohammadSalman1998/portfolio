@@ -45,7 +45,7 @@ const ProjectsItems = () => {
                                 <p className="text-[22px] !mt-2 font-semibold hover:text-primary hover:transition-all" onClick={()=>handleSendData(item.img, item.name, item.langs, item.date, item.desc, item.library, item.framework, item.repoLink, item.demoLink)}><Link to={'/projects'}>{item.name}</Link></p>
                                 <div className="desc flex justify-between items-baseline">
                                     <p >{item.langs}</p>
-                                    <Link className="hover:animate-pulse" target="_blanck" to={item.demoLink}><img src="/public/images/Portfolio/Icon.png" alt="" /></Link>
+                                    <Link className="hover:animate-pulse" target="_blanck" to={item.demoLink}><img src={import.meta.env.BASE_URL+"images/Portfolio/Icon.png"} alt="" /></Link>
                                 </div>
                             </div>
                         </div>

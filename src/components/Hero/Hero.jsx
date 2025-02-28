@@ -12,7 +12,7 @@ const Hero = () => {
                     <div className=" left-content bg-transparent z-10 absolute top-[37%] left-[10%] ">
                         <p className="text-5xl font-light">HEY!<span className=" font-bold"> I’m Mohammad,<br /> Full Stack Developer</span></p>
                         <p className={`transition-all duration-300 ease-in ${isDark == 'true' ? ' text-white' : ' text-secondary2'} w-90 text-lg !my-7`}>Agency-quality Webflow websites with the personal touch of a freelancer.</p>
-                        <a href="/public/files/mohammad salman.pdf" className={`cursor-pointer hover:animate-pulse transition-all duration-300 ease-in ${isDark == 'true' ? 'bg-primary text-white' : 'text-SubHeadBlack bg-white'}   font-semibold rounded-md  !p-4`} download={'mohammad salman CV'}>Download CV</a>
+                        <a href={import.meta.env.BASE_URL+"files/mohammad salman.pdf"} className={`cursor-pointer hover:animate-pulse transition-all duration-300 ease-in ${isDark == 'true' ? 'bg-primary text-white' : 'text-SubHeadBlack bg-white'}   font-semibold rounded-md  !p-4`} download={'mohammad salman CV'}>Download CV</a>
                     </div>
                     <div className=" absolute  top-[35%]   w-[90%] h-[70%] rounded-full opacity-40 bg-radial-[at_10%_100%]  from-[#9BFFA5]  via-[#CACFFA] to-[#AED3FF] to-100% blur-3xl"></div>
                 </div>
